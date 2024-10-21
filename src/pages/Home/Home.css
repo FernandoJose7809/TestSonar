@@ -1,0 +1,44 @@
+.home-container {
+    background-color: transparent; /* Fondo */
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.home-header {
+    color: #ffffff;
+}
+
+.home-features .feature-item {
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    color: #ffffff;
+}
+
+.feature-title {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.feature-description {
+    color: #ffffff;
+}
+
+.home-button {
+    background-color: #000000;
+    color: white; 
+    border: none;
+    padding: 12px 40px;
+    font-size: 1.2rem;
+    border-radius: 50px; 
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #4ea160; 
+}

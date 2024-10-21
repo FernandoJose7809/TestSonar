@@ -1,0 +1,129 @@
+/* UsersCRUD.css */
+.users-container {
+    height: 100vh; /* 100% de la altura de la pantalla */
+    width: 100vw;/* 100% del ancho de la pantalla */
+    overflow-y: auto; /* Permite desplazarse verticalmente si es necesario */
+    max-height: calc(100vh - 100px); /* Ajusta el alto máximo para no ocupar toda la pantalla */
+    margin: 0 auto;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    color: #ffffff; /* Texto blanco */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Bordes suaves */
+}
+
+table th {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro */
+    font-size: 18px;
+    text-transform: uppercase; /* Texto en mayúsculas para los headers */
+    letter-spacing: 1px;
+}
+
+table td {
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo más claro para las celdas */
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    border-radius: 30px; /* Bordes mucho más redondeados */
+    margin-right: 5px;
+    transition: all 0.3s ease; /* Transición más suave */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+}
+
+button:hover {
+    transform: translateY(-3px); /* Animación de levantamiento */
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+.form-container {
+    
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+    padding: 40px;
+    border-radius: 20px; /* Bordes más suaves */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra profunda */
+    backdrop-filter: blur(20px); /* Más blur para darle profundidad */
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 30px;
+    color: #ffffff; /* Texto blanco */
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; /* Mayúsculas en el título */
+    font-weight: bold;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff; /* Texto blanco */
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordes claros */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.15); /* Fondo input transparente */
+    color: #ffffff; /* Texto blanco */
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+    border-color: #007bff; /* Cambiar color del borde al hacer focus */
+    outline: none;
+}
+
+button {
+    background-color: black;
+    border-radius: 30px; /* Bordes más redondeados */
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #333333; /* Cambio a un gris oscuro al hacer hover */
+    transform: translateY(-3px); /* Animación de levantamiento */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}

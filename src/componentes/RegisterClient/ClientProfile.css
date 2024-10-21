@@ -1,0 +1,57 @@
+.modal {
+    z-index: 1055; /* Aumentamos el z-index para evitar que otros elementos interfieran */
+}
+
+.modal-backdrop {
+    z-index: 1050; /* Fondo del modal con z-index ligeramente inferior al modal */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    pointer-events: none; /* Aseguramos que no bloquea la interacción si hay problemas */
+}
+
+.client-profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    position: relative; /* Asegura que el contenido siempre esté posicionado correctamente */
+    z-index: 1;
+}
+
+.profile-details {
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+/* Asegurarse de que el cuerpo permita scroll si el modal no lo bloquea */
+body.modal-open {
+    overflow: hidden;
+}
+
+body {
+    overflow: auto; /* Se asegura que haya scroll si no está el modal activo */
+}

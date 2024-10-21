@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header, .main, .footer {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+body {
+  width: 100%;
+  font-family: 'Poppins', 'sans-serif';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('./componentes/imagenes/back1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin: 0;  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

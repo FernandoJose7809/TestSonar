@@ -1,0 +1,139 @@
+/* Contenedor principal del formulario */
+form.form-caja {
+    width: 200%;
+    max-width: 800px;
+    background-color: #ecf0f1;
+    /* Ajustar al color del main-content */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    
+    /* Para mantener la estructura con el sidebar */
+}
+
+/* Etiquetas de los campos */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Campos de texto y select */
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #007bff;
+    /* Cambiado al color de la navbar */
+    outline: none;
+    box-shadow: 0 0 5px rgba(13, 179, 68, 0.5);
+    /* Sombra acorde con el color verde */
+}
+
+/* Botón */
+form .btn-submit {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    /* Cambiado al color de la navbar */
+    cursor: pointer;
+    border-radius: 30px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+form .btn-submit:hover {
+    background-color: #007bff;
+    /* Oscurecido para hover */
+    transform: scale(1.02);
+}
+
+form .btn-submit:active {
+    background-color: #007bff;
+    transform: scale(0.98);
+}
+
+/* Alertas */
+.alert {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.alert-success {
+    background-color: #007bff;
+    /* Cambiado al color de la navbar */
+    color: white;
+}
+
+.alert-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .caja-container {
+        padding: 15px;
+    }
+
+    form {
+        padding: 20px;
+        max-width: 100%;
+        margin-left: 0;
+        /* Eliminar margen lateral para pantallas pequeñas */
+    }
+
+    form .btn-submit {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    form .btn-submit {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+.caja-dashboard-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #150546;
+    color: white;
+    padding: 3px;
+    position: fixed;
+    height: 100%;
+    transition: width 0.3s;
+    overflow: hidden;
+}
+.main-content-caja{
+    margin-left: 240px;
+}
